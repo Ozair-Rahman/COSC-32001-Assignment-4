@@ -6,6 +6,8 @@
 - Go to any browser of choice and in the url bar, go to: localhost:8501
 
 ## Source Code
+### Required Dependencies:
+Python version: 3.10.5
 ### Steps
 - Clone the repo
 - Run: streamlit run app.py
