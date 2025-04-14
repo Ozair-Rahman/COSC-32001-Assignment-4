@@ -1,0 +1,16 @@
+# Define containers that are going to run
+services:
+  # Containe for streamlit app
+  streamlit:
+    # Always restart container when a change is made
+    restart: always
+    # Define path to where to find Dockerfile
+    build:
+      context: .
+    # Map dir content to workdir
+    volumes:
+      - "./:/app"
+    # Define port app is going to run on the container and what 
+    # port your are going to map it to host machine
+    ports:
+      - 8501:8501
